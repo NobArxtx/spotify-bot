@@ -10,7 +10,7 @@ INITIAL_BIO = "Existence is painfull! Zoldyck Family™♥️//Spam here @Medevi
 SCREENSHOT_LAYER_ACCESS_KEY = os.environ.get("SCREENSHOT_LAYER_ACCESS_KEY",None)
 BOT_TOKEN = os.environ.get("BOT_TOKEN",None)
 BOTLOG = True 
-LOG = -100
+LOG = os.environ.get('LOG_CHANNEL', None)
 # the escaping is necessary since we are testing against a regex pattern with it.
 CMD_PREFIX = '\?' 
 # The key which is used to determine if the current bio was generated from the bot ot from the user. This means:
