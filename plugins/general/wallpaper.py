@@ -7,7 +7,7 @@ from PIL import Image
 from pySmartDL import SmartDL
 
 
-from __main__  import client
+from __main__ import client
 from telethon import events
 from constants import CMD_PREFIX
 from telethon.tl.functions.photos import UploadProfilePhotoRequest
