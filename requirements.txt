@@ -6,3 +6,4 @@ asyncurban
 bs4
 pySmartDL
 aiohttp
+html5lib
