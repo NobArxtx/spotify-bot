@@ -25,7 +25,9 @@ StartTime = time.time()
 
 def find_plug(path_='./plugins/'):
     def asee(ae):
-        return ae.rstrip('.py')
+        ae = ae.split('.')
+        ae.pop(len(ae)-1)
+        return '.'.join(ae)
     def rr(ae):
         if '__pycache__' in ae:
             return False
