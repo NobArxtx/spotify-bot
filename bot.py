@@ -8,7 +8,6 @@ import logging
 import requests
 from importlib import import_module
 import os
-from os import walk
 from telethon import events
 from telethon.tl import functions
 from logging import DEBUG, INFO, basicConfig, getLogger
