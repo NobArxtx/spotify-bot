@@ -32,7 +32,10 @@ def find_plug(path_='./plugins/'):
         if '__pycache__' in ae:
             return False
         else:
-            return True
+            if ae.endswith('.py'):
+                return True
+            else:
+                return False
     a = list(os.walk(path_))
     ok = []
     for g in a:
