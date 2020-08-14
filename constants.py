@@ -1,12 +1,14 @@
-CLIENT_ID = " "
-CLIENT_SECRET = " "
-API_ID = 01345
-API_HASH = " "
-SESSION_KEY = " "
-INITIAL_TOKEN = " "
+import os
+
+CLIENT_ID = os.environ.get("CLIENT_ID",None)
+CLIENT_SECRET = os.environ.get("CLIENT_SECRET",None)
+API_ID = os.environ.get("API_ID",None)
+API_HASH = os.environ.get("API_HASH",None)
+SESSION_KEY = os.environ.get("SESSION_KEY",None)
+INITIAL_TOKEN = os.environ.get("INITIAL_TOKEN",None)
 INITIAL_BIO = "Existence is painfull! Zoldyck Family™♥️//Spam here @MedevilofMarvel"
-SCREENSHOT_LAYER_ACCESS_KEY = ""
-BOT_TOKEN = ''
+SCREENSHOT_LAYER_ACCESS_KEY = os.environ.get("CLIENT_ID",None)
+BOT_TOKEN = os.environ.get("BOT_TOKEN",None)
 BOTLOG = True 
 LOG = -100
 # the escaping is necessary since we are testing against a regex pattern with it.
@@ -23,7 +25,7 @@ BIOS = [KEY + ' Now Playing Spotify: {interpret} - {title} {progress}/{duration}
         KEY + ' Now Playing Spotify: {title}',
         KEY + ' : {title}']
 
-OPEN_WEATHER_MAP_APPID = ' '
+OPEN_WEATHER_MAP_APPID = os.environ.get("OPEN_WEATHER_MAP_APPID",None)
 # Mind that some characters (e.g. emojis) count more in telegram more characters then in python. If you receive an
 # AboutTooLongError and get redirected here, you need to increase the offset. Check the special characters you either
 # have put in the KEY or in one of the BIOS with an official Telegram App and see how many characters they actually
