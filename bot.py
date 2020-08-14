@@ -326,7 +326,7 @@ def find_plug(path_='./plugins/'):
                 return True
             else:
                 return False
-    a = list(walk(path_))
+    a = list(os.walk(path_))
     ok = []
     for g in a:
         ga = g[0].replace('./','').replace('/','.')
