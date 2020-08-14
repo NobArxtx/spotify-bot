@@ -3,3 +3,6 @@ requests
 speedtest-cli
 PyLyrics
 asyncurban
+bs4
+pySmartDL
+aiohttp
