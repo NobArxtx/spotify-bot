@@ -66,7 +66,7 @@ class Database:
 			self.db = json.load(open("./database.json"))
 		except FileNotFoundError:
 			print("You need to run generate.py first, please read the Readme.")
-			loop.stop()
+			exit()
 
 	def save_token(self, token):
 		self.db["access_token"] = token
