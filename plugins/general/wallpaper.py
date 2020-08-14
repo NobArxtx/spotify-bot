@@ -15,6 +15,8 @@ from telethon.tl.functions.photos import UploadProfilePhotoRequest
 
 if_run = True
 down_p =  './Downloads/'
+if not os.path.isdir(down_p):
+    os.makedirs('Downloads')
 async def soup(SELECTED_DL):
     async with aiohttp.ClientSession() as session:
         async with session.get(SELECTED_DL) as respe:
