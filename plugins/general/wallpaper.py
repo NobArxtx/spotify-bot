@@ -5,7 +5,7 @@ import os
 import asyncio
 from PIL import Image
 from pySmartDL import SmartDL
-
+from random import randint
 
 from __main__ import client
 from telethon import events
